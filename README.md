@@ -1,18 +1,25 @@
 # AutoEthSecTest
 
-Plateforme d'automatisation de tests de sécurité Ethernet automotive (DoIP/UDS).
+Framework Python pour tester et sécuriser les communications diagnostiques automobiles (UDS/DoIP).
 
 ## Objectif
-Projet portfolio démontrant des compétences en test automation et sécurité 
-sur protocoles automotive, en lien avec les certifications ISTQB CTAL-TAE 
-et CT-STE.
+Automatiser les tests de conformité et de sécurité sur des ECU (simulés), en s'appuyant sur pytest.
 
-## Structure du projet
-- `src/` : code source
-- `tests/` : tests automatisés (Pytest)
-- `docs/` : documentation
-- `config/` : fichiers de configuration
-- `.github/workflows/` : pipelines CI/CD
+## État actuel
+- [x] Environnement pytest + CI-ready
+- [x] Builder de requêtes UDS
+- [ ] Parser de réponses UDS (positives/négatives)
+- [ ] ECU simulé
+- [ ] Fuzzing
+- [ ] Dashboard
+- [ ] Docker + CI
+
+## Lancer les tests
+    pip install -r requirements.txt
+    pytest -v
+
+## Stack
+Python, pytest, UDS (ISO 14229), DoIP, CAN
 
 
 
